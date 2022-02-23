@@ -61,3 +61,31 @@ public class MudBlazorUiNotificationService : IUiNotificationService, IScopedDep
 ```
 
 The code shown above automatically replaces the built-in `IUiNotificationService` service. To learn more about this mechanism [see Overriding Services](https://docs.abp.io/en/abp/latest/Customizing-Application-Modules-Overriding-Services).
+
+Now, modify `Index.razor` file to test MudBlazor style notifications:
+
+```razor
+@page "/"
+@using Volo.Abp.AspNetCore.Components.Notifications
+@inherits BookStoreComponentBase
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject IUiNotificationService NotificationService
+
+<div class="container">
+    <div class="p-5 text-center">
+        <Button onclick="@(async () => { await NotificationService.Success("Hello, World!"); await NotificationService.Warn("Something went wrong!"); })">
+            Show Notifications!
+        </Button>
+    </div>
+</div>
+```
+
+
+## The Result
+
+![image](images/screenshot2.png)
+
+
+## Next Step
+
+Create a new message service with MudBlazor Dialogs (comming soon!)
