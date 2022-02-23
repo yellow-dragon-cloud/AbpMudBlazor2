@@ -83,9 +83,9 @@ Now, modify `Index.razor` file to test MudBlazor style notifications:
 
 ## The Result
 
-![image](images/screenshot2.png)
+![image](screenshot2.png)
 
 
-## Next Step
+## Next
 
-Create a new message service with MudBlazor Dialogs (comming soon!)
+Create a new message service with MudBlazor Dialogs (COMMING SOON!)
