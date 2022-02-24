@@ -11,7 +11,50 @@ This sample [ABP](https://abp.io/) Blazor WebAssembly project shows how to repla
 This project is built on top of [MudBlazor Theme in ABP Blazor WebAssembly PART 1](https://github.com/yellow-dragon-cloud/AbpMudBlazor/). Therefore, you will first need to complete the steps shown in PART 1 to continue following the steps listed here.
 
 
-## 6. Replace [Notification Service](https://docs.abp.io/en/abp/latest/UI/Blazor/Notification)
+## 6. Add [MudBlazor Snackbar](https://www.mudblazor.com/components/snackbar#api) Support To MainLayout
+
+Open `MainLayout.razor`, add `<MudSnackbarProvider />` and remove `<UiNotificationAlert />`. The final content of the file should look like this:
+
+```razor
+@inherits LayoutComponentBase
+
+<MudThemeProvider />
+<MudSnackbarProvider />
+
+<MudLayout>
+    <MudAppBar Elevation="8">
+        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="MudBlazor.Color.Inherit" Edge="Edge.Start" 
+                       OnClick="@((e) => DrawerToggle())" />
+        <Branding />
+        <MudSpacer />
+        <NavToolbar />
+    </MudAppBar>
+    <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="8">
+        <NavMenu />
+    </MudDrawer>
+    <MudMainContent>
+        <MudContainer MaxWidth="MaxWidth.False" Class="mt-4">
+            <PageAlert />
+            @Body
+            <UiMessageAlert />
+            <UiPageProgress />
+        </MudContainer>
+    </MudMainContent>
+</MudLayout>
+
+@code 
+{
+    private bool _drawerOpen = true;
+
+    private void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+}
+```
+
+
+## 7. Replace [Notification Service](https://docs.abp.io/en/abp/latest/UI/Blazor/Notification)
 
 In `Volo.Abp.AspNetCore.Components.Web.BasicTheme` project, create a folder named `Services`. Create `MudBlazorUiNotificationService.cs` file to this folder, and add the following content:
 
