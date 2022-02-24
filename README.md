@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This sample [ABP](https://abp.io/) Blazor WebAssembly project shows how to replace built-in [Notification](https://docs.abp.io/en/abp/latest/UI/Blazor/Notification) service to display notifications with [MudBlazor](https://www.mudblazor.com/)'s [Snackbar](https://www.mudblazor.com/components/snackbar#api) component.
+This sample [ABP](https://abp.io/) Blazor WebAssembly project shows how to replace built-in [Notification](https://docs.abp.io/en/abp/latest/UI/Blazor/Notification) service to display notifications with [MudBlazor](https://www.mudblazor.com/)'s [Snackbar](https://www.mudblazor.com/components/snackbar#api) component. The source code is [avallable on GitHub](https://github.com/yellow-dragon-cloud/AbpMudBlazor2/).
 
 
 ## 5. Make Sure You Have Completed PART 1
