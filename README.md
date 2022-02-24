@@ -11,7 +11,7 @@ This sample [ABP](https://abp.io/) Blazor WebAssembly project shows how to repla
 This project is built on top of [MudBlazor Theme in ABP Blazor WebAssembly PART 1](https://github.com/yellow-dragon-cloud/AbpMudBlazor/). Therefore, you will first need to complete the steps shown in PART 1 to continue following the steps listed here.
 
 
-## 6. Add MudBlazor Snackbar Support To MainLayout
+## 6. Add [MudBlazor Snackbar](https://www.mudblazor.com/components/snackbar#api) Support To MainLayout
 
 Open `MainLayout.razor`, add `<MudSnackbarProvider />` and remove `<UiNotificationAlert />`. The final content of the file should look like this:
 
@@ -37,7 +37,6 @@ Open `MainLayout.razor`, add `<MudSnackbarProvider />` and remove `<UiNotificati
             <PageAlert />
             @Body
             <UiMessageAlert />
-            <UiNotificationAlert />
             <UiPageProgress />
         </MudContainer>
     </MudMainContent>
