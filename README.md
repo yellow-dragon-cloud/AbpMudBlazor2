@@ -56,7 +56,7 @@ Open `MainLayout.razor`, add `<MudSnackbarProvider />` and remove `<UiNotificati
 
 ## 7. Replace [Notification Service](https://docs.abp.io/en/abp/latest/UI/Blazor/Notification)
 
-In `Volo.Abp.AspNetCore.Components.Web.BasicTheme` project, create a folder named `Services`. Create `MudBlazorUiNotificationService.cs` file to this folder, and add the following content:
+In `Volo.Abp.AspNetCore.Components.Web.BasicTheme` project, create a folder named `Services`. Create `MudBlazorUiNotificationService.cs` file in this folder, and add the following content:
 
 ```csharp
 using System;
