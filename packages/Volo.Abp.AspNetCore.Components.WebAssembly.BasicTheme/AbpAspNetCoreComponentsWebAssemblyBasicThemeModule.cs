@@ -11,7 +11,7 @@ namespace Volo.Abp.AspNetCore.Components.WebAssembly.BasicTheme;
     typeof(AbpAspNetCoreComponentsWebBasicThemeModule),
     typeof(AbpAspNetCoreComponentsWebAssemblyThemingModule),
     typeof(AbpHttpClientIdentityModelWebAssemblyModule)
-    )]
+)]
 public class AbpAspNetCoreComponentsWebAssemblyBasicThemeModule : AbpModule
 {
     public override void ConfigureServices(ServiceConfigurationContext context)
