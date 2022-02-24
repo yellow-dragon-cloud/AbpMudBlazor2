@@ -83,7 +83,7 @@ Now, modify `Index.razor` file to test MudBlazor style notifications:
 
 ## The Result
 
-![image](screenshot2.png)
+![image](images/screenshot2.png)
 
 
 ## Next
