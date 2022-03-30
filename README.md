@@ -131,4 +131,5 @@ Now, modify `Index.razor` file to test MudBlazor style notifications:
 
 ## Next
 
-Create a new message service with MudBlazor Dialogs (COMMING SOON!)
+[MudBlazor Theme in ABP Blazor WebAssembly PART 3](https://github.com/yellow-dragon-cloud/AbpMudBlazor3)
+
