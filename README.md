@@ -13,7 +13,7 @@ This project is built on top of [MudBlazor Theme in ABP Blazor WebAssembly PART 
 
 ## 6. Add [MudBlazor Snackbar](https://www.mudblazor.com/components/snackbar#api) Support To MainLayout
 
-Open `MainLayout.razor`, add `<MudSnackbarProvider />` and remove `<UiNotificationAlert />`. The final content of the file should look like this:
+In the `Volo.Abp.AspNetCore.Components.Web.BasicTheme` project, open `MainLayout.razor`, add `<MudSnackbarProvider />` and remove `<UiNotificationAlert />`. The final content of the file should look like this:
 
 ```razor
 @inherits LayoutComponentBase
