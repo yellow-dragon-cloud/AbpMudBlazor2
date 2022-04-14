@@ -105,6 +105,10 @@ public class MudBlazorUiNotificationService : IUiNotificationService, IScopedDep
 
 The code shown above automatically replaces the built-in `IUiNotificationService` service. To learn more about this mechanism [see Overriding Services](https://docs.abp.io/en/abp/latest/Customizing-Application-Modules-Overriding-Services).
 
+Add the following to the `_Imports.razor`: 
+
+```@using Volo.Abp.AspNetCore.Components.Notifications```
+
 Now, modify `Index.razor` file to test MudBlazor style notifications:
 
 ```razor
